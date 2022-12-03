@@ -1,5 +1,5 @@
 elfs = []
-with open('python/one/input.txt', 'r') as file:
+with open('one/python/input.txt', 'r') as file:
     elf = 0
     for line in file:
         if len(line.rstrip()) == 0:
