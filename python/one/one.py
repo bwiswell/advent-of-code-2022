@@ -1,13 +1,13 @@
 elfs = []
-with open('input.txt', 'r') as file:
-    elf = []
+with open('python/one/input.txt', 'r') as file:
+    elf = 0
     for line in file:
         if len(line.rstrip()) == 0:
-            elfs.append(sum(elf))
-            elf = []
+            elfs.append(elf)
+            elf = 0
         else:
-            elf.append(int(line))
-    elfs.append(sum(elf))
+            elf += int(line)
+    elfs.append(elf)
 elfs.sort(reverse=True)
 
 print(f'Top elf: {elfs[0]}')
