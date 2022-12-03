@@ -20,4 +20,3 @@ for k, v in moves:
         score += v + 1
 
 print(f'Overall score: {score}')
-print(score)
